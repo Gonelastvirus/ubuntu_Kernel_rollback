@@ -5,7 +5,7 @@
 <p>-------------------------------------------------------------<br>
 Step 1: Get currently installed kernel menu entries from GRUB configuration file.
 <P>$ sudo cat /boot/grub/grub.cfg | grep -iE "menuentry 'Ubuntu, with Linux" | awk '{print i++ " : "$1, $2, $3, $4, $5, $6, $7}'
-(or)
+(or)</P><P><br>
 $ sudo grub-mkconfig | grep -iE "menuentry 'Ubuntu, with Linux" | awk '{print i++ " : "$1, $2, $3, $4, $5, $6, $7}'</p>
 </P>
 
