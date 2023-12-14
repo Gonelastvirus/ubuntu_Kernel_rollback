@@ -8,6 +8,7 @@ Step 1: Get currently installed kernel menu entries from GRUB configuration file
 (or)
 $ sudo grub-mkconfig | grep -iE "menuentry 'Ubuntu, with Linux" | awk '{print i++ " : "$1, $2, $3, $4, $5, $6, $7}'</p>
 </P>
+
 <p>-------------------------------------------------------------
 Step 2: Modify the GRUB_DEFAULT=0 value as per your need.<br>
 $ grep GRUB_DEFAULT /etc/default/grub<br>
